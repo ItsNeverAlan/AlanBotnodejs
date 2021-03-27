@@ -38,11 +38,11 @@ module.exports = class BotInfoCommand extends Command {
       .addField('Tech', `\`\`\`asciidoc\n${tech}\`\`\``)
       .addField(
         'Links', 
-        '**[Invite Me](https://discordapp.com/oauth2/authorize?client_id=416451977380364288&scope=bot&permissions=403008599) | ' +
+        '**[Invite Me](https://discord.com/oauth2/authorize?client_id=668000424313356288&scope=bot&permissions=0) | ' +
         '[Support Server](https://discord.gg/zaWhDx2) | ' +
         '[Repository](https://github.com/sabattle/AlanBotBot)**'
       )
-      .setImage('https://raw.githubusercontent.com/sabattle/AlanBotBot/develop/data/images/AlanBot_Title.png')
+      .setImage('https://github.com/ItsNeverAlan/AlanBotnodejs/tree/develop/data/images/AlanBot_Title.png')
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()
       .setColor(message.guild.me.displayHexColor);

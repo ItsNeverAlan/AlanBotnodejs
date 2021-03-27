@@ -2,11 +2,11 @@ const Command = require('../Command.js');
 const ReactionMenu = require('../ReactionMenu.js');
 const { MessageEmbed } = require('discord.js');
 const art = [
-  'https://raw.githubusercontent.com/sabattle/AlanBotBot/develop/data/images/AlanBot_Full_Signature.png',
-  'https://raw.githubusercontent.com/sabattle/AlanBotBot/develop/data/images/AlanBot.png',
-  'https://raw.githubusercontent.com/sabattle/AlanBotBot/develop/data/images/AlanBot_WIP.png',
-  'https://raw.githubusercontent.com/sabattle/AlanBotBot/develop/data/images/AlanBot_WIP_2.png',
-  'https://raw.githubusercontent.com/sabattle/AlanBotBot/develop/data/images/AlanBot_WIP_3.png'
+  'https://github.com/ItsNeverAlan/AlanBotnodejs/tree/develop/data/images/AlanBot_Full_Signature.png',
+  'https://github.com/ItsNeverAlan/AlanBotnodejs/tree/develop/data/images/AlanBot.png',
+  'https://github.com/ItsNeverAlan/AlanBotnodejs/tree/develop/data/images/AlanBot_WIP.png',
+  'https://github.com/ItsNeverAlan/AlanBotnodejs/tree/develop/data/images/AlanBot_WIP_2.png',
+  'https://github.com/ItsNeverAlan/AlanBotnodejs/tree/develop/data/images/AlanBot_WIP_3.png'
 ];
 
 module.exports = class GalleryCommand extends Command {

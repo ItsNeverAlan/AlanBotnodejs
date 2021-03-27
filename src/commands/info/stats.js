@@ -43,9 +43,9 @@ module.exports = class StatsCommand extends Command {
       .addField('Server', `\`\`\`asciidoc\n${serverStats}\`\`\``)
       .addField(
         'Links', 
-        '**[Invite Me](https://discordapp.com/oauth2/authorize?client_id=416451977380364288&scope=bot&permissions=403008599) | ' +
+        '**[Invite Me](https://discord.com/oauth2/authorize?client_id=668000424313356288&scope=bot&permissions=0) | ' +
         '[Support Server](https://discord.gg/zaWhDx2) | ' +
-        '[Repository](https://github.com/sabattle/AlanBotBot)**'
+        '[Repository](https://github.com/ItsNeverAlan/AlanBotnodejs)**'
       )
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()

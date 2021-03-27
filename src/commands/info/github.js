@@ -15,13 +15,13 @@ module.exports = class GitHubCommand extends Command {
   run(message) {
     const embed = new MessageEmbed()
       .setTitle('GitHub Link')
-      .setThumbnail('https://raw.githubusercontent.com/sabattle/AlanBotBot/develop/data/images/AlanBot.png')
+      .setThumbnail('https://raw.githubusercontent.com/ItsNeverAlan/AlanBotnodejs/develop/data/images/AlanBot.png')
       .setDescription(oneLine`
-        Click [here](https://github.com/sabattle/AlanBotBot) to to visit my GitHub repository!
+        Click [here](https://github.com/ItsNeverAlan/AlanBotBot) to to visit my GitHub repository!
         Please support me by starring ⭐ the repo, and feel free to comment about issues or suggestions!
       `)
       .addField('Other Links',
-        '**[Invite Me](https://discordapp.com/oauth2/authorize?client_id=416451977380364288&scope=bot&permissions=403008599) | ' +
+        '**[Invite Me](https://discord.com/oauth2/authorize?client_id=668000424313356288&scope=bot&permissions=0) | ' +
         '[Support Server](https://discord.gg/zaWhDx2)**'
       )
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))

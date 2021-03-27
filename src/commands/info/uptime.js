@@ -21,7 +21,7 @@ module.exports = class UptimeCommand extends Command {
     const date = moment().subtract(d, 'ms').format('dddd, MMMM Do YYYY');
     const embed = new MessageEmbed()
       .setTitle('AlanBot\'s Uptime')
-      .setThumbnail('https://raw.githubusercontent.com/sabattle/AlanBotBot/develop/data/images/AlanBot.png')
+      .setThumbnail('https://raw.githubusercontent.com/ItsNeverAlan/AlanBotnodejs/develop/data/images/AlanBot.png')
       .setDescription(`\`\`\`prolog\n${days}, ${hours}, ${minutes}, and ${seconds}\`\`\``)
       .addField('Date Launched', date) 
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))

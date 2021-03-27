@@ -15,14 +15,14 @@ module.exports = class InviteMeCommand extends Command {
   run(message) {
     const embed = new MessageEmbed()
       .setTitle('Invite Me')
-      .setThumbnail('https://raw.githubusercontent.com/sabattle/AlanBotBot/develop/data/images/AlanBot.png')
+      .setThumbnail('https://raw.githubusercontent.com/ItsNeverAlan/AlanBotnodejs/develop/data/images/AlanBot.png')
       .setDescription(oneLine`
-        Click [here](https://discordapp.com/oauth2/authorize?client_id=416451977380364288&scope=bot&permissions=403008599)
+        Click [here](https://discord.com/oauth2/authorize?client_id=668000424313356288&scope=bot&permissions=0)
         to invite me to your server!
       `)
       .addField('Other Links', 
         '**[Support Server](https://discord.gg/zaWhDx2) | ' +
-        '[Repository](https://github.com/sabattle/AlanBotBot)**'
+        '[Repository](https://github.com/ItsNeverAlan/AlanBotnodejs)**'
       )
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()

@@ -39,7 +39,7 @@ module.exports = class HelpCommand extends Command {
       
       embed // Build specific command help embed
         .setTitle(`Command: \`${command.name}\``)
-        .setThumbnail('https://raw.githubusercontent.com/sabattle/AlanBotBot/develop/data/images/AlanBot.png')
+        .setThumbnail('https://raw.githubusercontent.com/ItsNeverAlan/AlanBotnodejs/develop/data/images/AlanBot.png')
         .setDescription(command.description)
         .addField('Usage', `\`${prefix}${command.usage}\``, true)
         .addField('Type', `\`${capitalize(command.type)}\``, true)
@@ -97,7 +97,7 @@ module.exports = class HelpCommand extends Command {
           message.author.displayAvatarURL({ dynamic: true })
         )
         .setTimestamp()
-        .setImage('https://raw.githubusercontent.com/sabattle/AlanBotBot/develop/data/images/AlanBot_Title.png')
+        .setImage('https://raw.githubusercontent.com/ItsNeverAlan/AlanBotnodejs/develop/data/images/AlanBot_Title.png')
         .setColor(message.guild.me.displayHexColor);
 
       for (const type of Object.values(message.client.types)) {
@@ -108,9 +108,9 @@ module.exports = class HelpCommand extends Command {
 
       embed.addField(
         '**Links**', 
-        '**[Invite Me](https://discordapp.com/oauth2/authorize?client_id=416451977380364288&scope=bot&permissions=403008599) | ' +
+        '**[Invite Me](https://discord.com/oauth2/authorize?client_id=668000424313356288&scope=bot&permissions=0) | ' +
         '[Support Server](https://discord.gg/zaWhDx2) | ' +
-        '[Repository](https://github.com/sabattle/AlanBotBot)**'
+        '[Repository](https://github.com/ItsNeverAlan/AlanBotnodejs)**'
       );
         
     }
