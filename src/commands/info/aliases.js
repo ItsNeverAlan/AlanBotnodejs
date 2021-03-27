@@ -100,7 +100,7 @@ module.exports = class AliasesCommand extends Command {
         '**Links**', 
         '**[Invite Me](https://discord.com/oauth2/authorize?client_id=668000424313356288&scope=bot&permissions=0) | ' +
         '[Support Server](https://discord.gg/zaWhDx2) | ' +
-        '[Repository](https://github.com/ItsNeverAlan/AlanBotBot)**'
+        '[Repository](https://github.com/ItsNeverAlan/AlanBotnodejs)**'
       );
 
     }
