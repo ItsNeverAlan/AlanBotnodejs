@@ -9,7 +9,7 @@ module.exports = class ReportBugCommand extends Command {
       aliases: ['bugreport', 'report', 'bug', 'rb', 'br'],
       usage: 'reportbug <message>',
       description: oneLine`
-        Sends a message to the Calypso Support Server's bug report channel.
+        Sends a message to the AlanBot Support Server's bug report channel.
         When reporting a bug, please include as much information as possible.
       `,
       type: client.types.MISC,
@@ -39,11 +39,11 @@ module.exports = class ReportBugCommand extends Command {
     if (report.length > 1024) report = report.slice(0, 1021) + '...';
     const embed = new MessageEmbed()
       .setTitle('Bug Report')
-      .setThumbnail('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso.png')
+      .setThumbnail('https://raw.githubusercontent.com/sabattle/AlanBotBot/develop/data/images/AlanBot.png')
       .setDescription(oneLine`
         Successfully sent bug report!
-        Please join the [Calypso Support Server](https://discord.gg/pnYVdut) to further discuss your issue.
-        Additionally, feel free to submit an issue on [GitHub](https://github.com/sabattle/CalypsoBot/issues).
+        Please join the [AlanBot Support Server](https://discord.gg/zaWhDx2) to further discuss your issue.
+        Additionally, feel free to submit an issue on [GitHub](https://github.com/sabattle/AlanBotBot/issues).
       `) 
       .addField('Member', message.member, true)
       .addField('Message', report)

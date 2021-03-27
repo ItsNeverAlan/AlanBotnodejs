@@ -37,7 +37,7 @@ module.exports = (client, message) => {
           // Update points with messagePoints value
           if (pointTracking)
             client.db.users.updatePoints.run({ points: messagePoints }, message.author.id, message.guild.id);
-          return; // Return early so Calypso doesn't respond
+          return; // Return early so AlanBot doesn't respond
         }
       }
 
@@ -57,8 +57,8 @@ module.exports = (client, message) => {
       !modChannelIds.includes(message.channel.id)
     ) {
       const embed = new MessageEmbed()
-        .setTitle('Hi, I\'m Calypso. Need help?')
-        .setThumbnail('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso.png')
+        .setTitle('Hi, I\'m AlanBot. Need help?')
+        .setThumbnail('https://raw.githubusercontent.com/sabattle/AlanBotBot/develop/data/images/AlanBot.png')
         .setDescription(`You can see everything I can do by using the \`${prefix}help\` command.`)
         .addField('Invite Me', oneLine`
           You can add me to your server by clicking 
@@ -66,7 +66,7 @@ module.exports = (client, message) => {
         `)
         .addField('Support', oneLine`
           If you have questions, suggestions, or found a bug, please join the 
-          [Calypso Support Server](https://discord.gg/pnYVdut)!
+          [AlanBot Support Server](https://discord.gg/pnYVdut)!
         `)
         .setFooter('DM Nettles#8880 to speak directly with the developer!')
         .setColor(message.guild.me.displayHexColor);
